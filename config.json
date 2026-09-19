@@ -1,0 +1,58 @@
+{
+"DESIGN_NAME": "rv32i_core",
+
+"VERILOG_FILES": [
+"dir::src/core.v"
+],
+
+"CLOCK_PORT": "clk",
+"CLOCK_PERIOD": 16.0,
+
+"PNR_SDC_FILE": "dir::constraint.sdc",
+"SIGNOFF_SDC_FILE": "dir::constraint.sdc",
+
+"PDK": "sky130A",
+"STD_CELL_LIBRARY": "sky130_fd_sc_hd",
+
+"FP_CORE_UTIL": 40,
+"FP_ASPECT_RATIO": 1.0,
+
+"PDN_CORE_RING": false,
+"PDN_VOFFSET": 20.0,
+"PDN_HOFFSET": 20.0,
+"PDN_VPITCH": 160.0,
+"PDN_HPITCH": 160.0,
+
+"SYNTH_STRATEGY": "AREA 0",
+"MAX_FANOUT_CONSTRAINT": 12,
+"SYNTH_ABC_BUFFERING": true,
+
+"PL_TARGET_DENSITY_PCT": 65,
+
+"GPL_CELL_PADDING": 2,
+"DPL_CELL_PADDING": 2,
+
+"RUN_POST_GPL_DESIGN_REPAIR": true,
+"RUN_POST_CTS_RESIZER_TIMING": true,
+"DESIGN_REPAIR_BUFFER_INPUT_PORTS": true,
+
+"CTS_CLK_BUFFERS": [
+"sky130_fd_sc_hd__clkbuf_2",
+"sky130_fd_sc_hd__clkbuf_4"
+],
+"CTS_ROOT_BUFFER": "sky130_fd_sc_hd__clkbuf_4",
+
+"DRT_OPT_ITERS": 64,
+"RT_MIN_LAYER": "met1",
+"RT_MAX_LAYER": "met5",
+
+"RUN_HEURISTIC_DIODE_INSERTION": false,
+"RUN_ANTENNA_REPAIR": false,
+"DRT_ANTENNA_REPAIR_ITERS": 0,
+
+"MAGIC_DEF_LABELS": true,
+
+"RUN_KLAYOUT_XOR": true,
+"RUN_KLAYOUT_DRC": true,
+"RUN_LVS": true
+}
