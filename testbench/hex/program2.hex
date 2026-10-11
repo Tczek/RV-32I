@@ -1,0 +1,19 @@
+// program.hex — encoded sum 1..5 program ($readmemh format)
+// Address 0: addi x1,x0,1      = 00100093
+00100093
+// Address 4: addi x2,x0,0      = 00000113
+00000113
+// Address 8: addi x3,x0,6      = 00600193
+00600193
+// Address C: bge  x1,x3,done   = 0030d863  (offset +16 = done)
+0030d863
+// Address 10: add x2,x2,x1     = 00110133
+00110133
+// Address 14: addi x1,x1,1     = 00108093
+00108093
+// Address 18: jal  x0,loop     = ff5ff06f  (offset -12 = loop)
+ff5ff06f
+// Address 1C: sw   x2,0(x0)    = 00202023  (done:)
+00202023
+// Address 20: jal  x0,0        = 0000006f  (halt)
+0000006f

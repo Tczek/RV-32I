@@ -2,7 +2,7 @@
 "DESIGN_NAME": "rv32i_core",
 
 "VERILOG_FILES": [
-"dir::src/core.v"
+"dir::src/*.v"
 ],
 
 "CLOCK_PORT": "clk",
